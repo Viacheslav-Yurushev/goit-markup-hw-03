@@ -5,18 +5,55 @@
   --accent-color: #2196f3;
   --text-color-dark-terms: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primery-text-color);
+}
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--primery-text-color);
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
 /* -----HEADER---- */
+.decorate-header {
+  border-bottom: 1px solid #ececec;
+}
+.head-line {
+  display: flex;
+  align-items: center;
+}
 .logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -24,10 +61,30 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .logo-studio {
   color: #000000;
 }
+.nav-line {
+  display: flex;
+}
+
+/* Какая запись лучше "та что в коментариях или активная"?
+.nav-line > li:not(:last-child) {
+  margin-right: 50px;
+} */
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu,
+.head-contacks {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .menu {
   font-weight: 500;
   font-size: 14px;
@@ -38,6 +95,14 @@ body {
 .menu:hover,
 .menu:focus {
   color: var(--accent-color);
+}
+.head-contacks-line {
+  display: flex;
+  margin-left: auto;
+}
+
+.head-contacks-item:not(:last-child) {
+  margin-right: 50px;
 }
 .head-contacks {
   font-weight: 500;
@@ -53,14 +118,7 @@ body {
 .head-studio {
   color: var(--accent-color);
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--secondary-text-color);
-}
+
 /* -----/HEADER---- */
 /* ----HERO---- */
 .hero {
