@@ -29,6 +29,10 @@ body {
 .link {
   text-decoration: none;
 }
+.btn {
+  border: none;
+  cursor: pointer;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -44,6 +48,22 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
+}
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* -----HEADER---- */
@@ -120,8 +140,11 @@ body {
 }
 
 /* -----/HEADER---- */
+
 /* ----HERO---- */
 .hero {
+  padding-top: 280px;
+  padding-bottom: 280px;
   background-color: #2f303a;
 }
 .hero-title {
@@ -132,6 +155,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-dark-terms);
+
+  max-width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 .btn {
   font-family: "Roboto", sans-serif;
@@ -142,10 +171,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  cursor: pointer;
 
   color: var(--text-color-dark-terms);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn:hover,
 .btn:focus {
@@ -155,6 +188,9 @@ body {
 
 /* ----Преимущества компании ---- */
 
+.quality-list {
+  display: flex;
+}
 .quality-title {
   font-weight: 700;
   font-size: 14px;
@@ -162,24 +198,39 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 .quality-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.quality-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ----/Преимущества компании ---- */
 
 /* ----Чем занимаемся ---- */
-
+.works-list {
+  display: flex;
+}
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.container .section-title {
+  margin-bottom: 50px;
+}
 /* ----/Чем занимаемся ---- */
 
 /* ----Наша команда---- */
 .employees {
   background-color: #f5f4fa;
 }
-
 .employees-list {
+  display: flex;
+}
+
+.employees-item {
   background-color: var(--primery-bgc);
 }
 .employees-name {
@@ -229,7 +280,9 @@ body {
 .head-portfolio {
   color: var(--accent-color);
 }
-
+.menu-filter {
+  display: flex;
+}
 .btn-filter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -245,7 +298,10 @@ body {
   background-color: var(--accent-color);
   color: var(--text-color-dark-terms);
 }
-
+.our-works {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-name {
   font-weight: 700;
   font-size: 18px;
