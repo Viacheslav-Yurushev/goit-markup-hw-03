@@ -18,6 +18,11 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
@@ -74,13 +79,16 @@ body {
   display: flex;
   align-items: center;
 }
-.logo-web {
+.logo-web,
+.logo-web-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.logo-web {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -211,6 +219,9 @@ body {
 /* ----/Преимущества компании ---- */
 
 /* ----Чем занимаемся ---- */
+.what-doing {
+  padding-top: 0;
+}
 .works-list {
   display: flex;
 }
@@ -228,10 +239,19 @@ body {
 }
 .employees-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
+.employee-photo {
+  margin-bottom: 30px;
+}
 .employees-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--primery-bgc);
+  padding-bottom: 30px;
 }
 .employees-name {
   font-weight: 500;
@@ -241,6 +261,7 @@ body {
 
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .employees-profesion {
@@ -254,7 +275,15 @@ body {
 /* ----Футер---- */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.logo-web-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+/* margin-bottom: 20px;  -почему не сработало для логотипа до блока адрес*/
 
 .logo-studio-footer {
   color: var(--text-color-dark-terms);
@@ -264,6 +293,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.address-item + .address-item {
+  margin-top: 9px;
 }
 
 .address-contact {
