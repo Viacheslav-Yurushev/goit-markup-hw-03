@@ -34,7 +34,8 @@ body {
 .link {
   text-decoration: none;
 }
-.btn {
+.btn,
+.btn-filter {
   border: none;
   cursor: pointer;
 }
@@ -315,7 +316,11 @@ body {
 }
 .menu-filter {
   display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
 }
+
 .btn-filter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -323,8 +328,13 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;
   color: var(--secondary-text-color);
+  border-radius: 4px;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
@@ -334,13 +344,27 @@ body {
 .our-works {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
+.portfolio-border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: var(--primery-bgc);
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+/* .our-work-img  */
+
 .portfolio-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 
 .porfolio-item {
