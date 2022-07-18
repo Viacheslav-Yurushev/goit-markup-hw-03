@@ -152,8 +152,8 @@ body {
 
 /* ----HERO---- */
 .hero {
-  padding-top: 280px;
-  padding-bottom: 280px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
 }
 .hero-title {
@@ -244,14 +244,16 @@ body {
   gap: 30px;
 }
 
-.employee-photo {
-  margin-bottom: 30px;
-}
+/* .employee-photo {
+} */
 .employees-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primery-bgc);
+}
+.employee-information {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .employees-name {
@@ -318,7 +320,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-filter {
